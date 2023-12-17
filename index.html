@@ -6,92 +6,93 @@
     <title>Responsive Registration Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/0647d444ad.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="split-screen">
-        <div class="left">
-            <section class="copy">
-                <img src="image/Logo.png" alt="logo">
-                <h1>For Individuals</h1>
-                <p>
-                    Start benefiting from the wellness experience. For companies looking on increasing productivity, and
-                    improving
-                    organization wellness.
-                </p>
-            </section>
+    <header>
+        <img src="image/Logo.png" alt="logo" id="logo" />
+        <div class="heading">
+            <h2>For Individuals</h2>
+
+
+            <p class="txt-sm">
+                Inspiring wholesome harmony for the mind, body and spirit, for
+                everyone, everywhere.
+            </p>
+
+
+            <p class="txt_lg">
+                Start benefiting from the wellness experience. For companies looking
+                on increasing productivity, and improving organization wellness.
+            </p>
         </div>
-        <div class="right">
-            <div class="container">
-                <form action="#">
-                    <div class="main-user-info">
-                        <div class="user-input-box">
-                            <label for="fullName">First Name</label>
-                            <input type="text" id="fullName" name="first_name" placeholder="Tolu" />
-                        </div>
-                        <div class="user-input-box">
-                            <label for="username">Last Name</label>
-                            <input type="text" id="username" name="username" placeholder="last name" />
-                        </div>
-                        <div class="user-input-box">
-                            <span>Gender</span>
-                            <select>
-                                <option value="">Please select one…</option>
-                                <option value="female">Female</option>
-                                <option value="male">Male</option>
-                                <option value="non-binary">Non-Binary</option>
-                                <option value="other">Other</option>
-                                <option value="Prefer not to answer">Perfer not to Answer</option>
-                            </select>
-                        </div>
-                        <div class="user-input-box">
-                            <label for="date">Date of birth</label>
-                            <input type="date" name="dob" data-placeholder="select here" required
-                                aria-required="true" />
-                        </div>
-                        <div class="user-input-box">
-                            <label>Weight (KG)</label>
-                            <input type="number" id="phoneNumber" name="kg" placeholder="Enter Phone Weight" />
-                        </div>
+    </header>
 
-                        <div class="user-input-box">
-                            <label>Height (CM)</label>
-                            <input type="number" name="cm" placeholder="enter your Height" />
-                        </div>
-
-                        <div class="user-input-box">
-                            <span class="activity">Activity Level<span>
-
-                                    <select>
-                                        <option value="">Select here…</option>
-                                    </select>
-                        </div>
-
-                        <div class="user-password password">
-                            <label for="password">Password</label>
-                            <input type="password" id="password" name="password" placeholder="Enter Password" />
-                            <i class='far fa-eye-slash'></i>
-                        </div>
-
-                    </div>
-
-                    <div class="form-submit-btn">
-                        <input type="submit" value="Register">
-                    </div>
-
-                    <section class="copy legal">
-                        <p>
-                            <span class="small">
-                                By clicking Register, you agree to our <a href="#"> Terms of Use </a> and our <a
-                                    href="#">Privacy Policy</a>
-                            </span>
-                        </p>
-                    </section>
-                </form>
+    <div class="form">
+        <form action="">
+            <div class="dta_1">
+                <div class="form-control">
+                    <label for="firstName">First Name</label><br />
+                    <input type="text" name="firstName" class="form-input" />
+                </div>
+                <div class="form-control">
+                    <label for="lastName">Last Name</label><br />
+                    <input type="text" name="lastName" class="form-input" />
+                </div>
             </div>
-        </div>
+
+            <div class="dta_2">
+                <div class="form-control">
+                    <label for="gender">Gender</label><br />
+                    <select name="gender" id="gender">
+                        <option value="Select here">Select here</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    <label for="dob">Date of Birth</label><br />
+                    <input type="date" name="dob" class="form-input" id="dob" data-placeholder="select here" required
+                        aria-required="true" />
+                </div>
+            </div>
+
+            <div class="dta_3">
+                <div class="form-control">
+                    <label for="weight">Weight (KG)</label><br />
+                    <input type="number" placeholder="Enter Weight" class="form-input" />
+                </div>
+                <div class="form-control">
+                    <label for="weight">Height (CM)</label><br />
+                    <input type="number" placeholder="Enter height here.." class="form-input" />
+                </div>
+            </div>
+
+            <div class="form-control">
+                <label for="activityLevel">Activity Level</label><br />
+                <select name="activityLevel" id="activityLevel">
+                    <option class="opt-placeholder" value="Select here">
+                        Select here
+                    </option>
+                    <option value="">.</option>
+                    <option value="">..</option>
+                </select>
+            </div>
+            <div class="form-ctr">
+                <label for="password">Password</label><br />
+                <input type="password" id="password" class="form-input" />
+                <i class='far fa-eye-slash'></i>
+            </div>
+            <button type="submit" class="btn">Register</button>
         </form>
+
+        <footer>
+            <p class="footer">
+                By clicking Register, you agree to our
+                <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>
+            </p>
+        </footer>
     </div>
 </body>
 
